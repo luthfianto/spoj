@@ -1,0 +1,28 @@
+langkah=0
+
+#kantong=[]
+#jumlah=gets.to_i
+
+kantong=[8,7,6,31,15,5,33,45,4,5,63,35,5,5,1]
+banyaknya=15
+
+#kantong=[3,4]
+#jumlah=2
+
+#jumlah.times{|i|
+#	kantong[i]=gets.to_i}
+
+kantong.sort!
+jumlah=kantong.inject(:+)
+rata2=jumlah/banyaknya
+
+p kantong
+p rata2
+
+jumlah.times{|i|
+	break if kantong[i] >= rata2
+	langkah+=kantong[i]
+}
+if langkah==0 then langkah=-1 end
+
+p langkah
