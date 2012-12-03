@@ -1,4 +1,5 @@
-gets.to_i.times {
-	n=gets.to_i
-	puts n*(n+1)*(2*n+1)/6
+gets.to_i.times{
+n=gets.to_i
+a=n**2
+p ((2*a*n+5*a+2*n)/8).floor
 }
