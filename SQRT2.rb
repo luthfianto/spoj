@@ -1,4 +1,3 @@
 require 'bigdecimal'
 require 'bigdecimal/math'
-include BigMath
-puts E(200).to_s.sub('0.2','2.')
+puts BigDecimal(2).sqrt(60000).to_s.sub('0.1','1.')

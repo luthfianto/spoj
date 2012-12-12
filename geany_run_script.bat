@@ -1,4 +1,4 @@
-ruby "BOMARBLE.rb"
+ruby "MINCOUNT.rb"
 
 pause
 del "%0"
